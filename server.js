@@ -31,6 +31,32 @@ app.get('/scrape', function(req, res){
   })
 })
 
+// app.get('/scompany', function(req, res){
+//   var companyName = [];
+//   list.info.forEach(element => {
+//     companyName.push(element.name)
+//   });
+
+//   companyName.forEach(el => {
+//     url = `https://finance.yahoo.com/quote/${el}/profile?p=${el}`;
+//   })
+ 
+//   request(url, function(err, resp, section){
+//     $ = cheerio.load(section);
+//     var json2 = { info: []};
+//     description = $(this).next().next().html()
+//     $(description).each(function(i, des){
+//       console.log(des)
+//       // json2.info.push({description: $(des).text()})
+//     });
+//     // fs.writeFile('info.json', JSON.stringify(json2, null, 4), function(err){
+//     //   console.log('File successfully written! - Check your project directory for the info.json file');
+//     // })
+  
+//     // res.send('Check your console!')
+//   })
+// })
+
 app.listen('8081')
 console.log('Magic happens on port 8081');
 exports = module.exports = app;
