@@ -17,9 +17,26 @@
         }).error(function(){
             console.log('error');
         });
+        $.getJSON('/info.json',function(data){
+            $.each(data.info,function(i,el){
+                $('ol').append('<li>'+el.description+'</li>');
+            });
+        }).error(function(){
+            console.log('error');
+        });
+    });
+    $(function(){
+        $.getJSON('/info.json',function(data){
+            $.each(data.info,function(i,el){
+                $('ol').append('<li>'+el.description+'</li>');
+            });
+        }).error(function(){
+            console.log('error');
+        });
     });
 </script>
 <body>
     <ul></ul>
+    <ol></ol>
 </body>
 </html>
