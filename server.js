@@ -18,12 +18,17 @@ app.get('/scrape', function(req, res){
   request(url, function(err, resp, table){
     $ = cheerio.load(table);
     var json = { info: []};
-    links = $('a'); //jquery get all hyperlinks
+    links = $(`a`); //jquery get all hyperlinks
     $(links).each(function(i, link){
-     
       json.info.push({name: $(link).text(),link: 'https://finance.yahoo.com' +  $(link).attr('href')})
     });
-    fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
+      var adjust = json.info.length;
+      var resultsNeeded = adjust.length = 130;
+      var j = { info: []};
+      for (var i = 30; i < resultsNeeded; i++){
+        j.info.push(json.info[i])
+      }
+    fs.writeFile('output.json', JSON.stringify(j, null, 4), function(err){
       console.log('File successfully written! - Check your project directory for the output.json file');
     })
   

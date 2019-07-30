@@ -45,16 +45,20 @@
             "link": "https://finance.yahoo.com/quote/AVB?p=AVB"
         },
         {
-            "name": "DLR-PJ",
-            "link": "https://finance.yahoo.com/quote/DLR-PJ?p=DLR-PJ"
+            "name": "SBAC",
+            "link": "https://finance.yahoo.com/quote/SBAC?p=SBAC"
+        },
+        {
+            "name": "DLR-PK",
+            "link": "https://finance.yahoo.com/quote/DLR-PK?p=DLR-PK"
         },
         {
             "name": "DLR-PG",
             "link": "https://finance.yahoo.com/quote/DLR-PG?p=DLR-PG"
         },
         {
-            "name": "DLR-PK",
-            "link": "https://finance.yahoo.com/quote/DLR-PK?p=DLR-PK"
+            "name": "DLR-PJ",
+            "link": "https://finance.yahoo.com/quote/DLR-PJ?p=DLR-PJ"
         },
         {
             "name": "DLR-PC",
@@ -63,10 +67,6 @@
         {
             "name": "DLR-PI",
             "link": "https://finance.yahoo.com/quote/DLR-PI?p=DLR-PI"
-        },
-        {
-            "name": "SBAC",
-            "link": "https://finance.yahoo.com/quote/SBAC?p=SBAC"
         },
         {
             "name": "VTR",
@@ -125,12 +125,12 @@
             "link": "https://finance.yahoo.com/quote/VNO-PK?p=VNO-PK"
         },
         {
-            "name": "MAA-PI",
-            "link": "https://finance.yahoo.com/quote/MAA-PI?p=MAA-PI"
-        },
-        {
             "name": "WPC",
             "link": "https://finance.yahoo.com/quote/WPC?p=WPC"
+        },
+        {
+            "name": "MAA-PI",
+            "link": "https://finance.yahoo.com/quote/MAA-PI?p=MAA-PI"
         },
         {
             "name": "INVH",
@@ -153,20 +153,20 @@
             "link": "https://finance.yahoo.com/quote/NLY?p=NLY"
         },
         {
-            "name": "NLY-PD",
-            "link": "https://finance.yahoo.com/quote/NLY-PD?p=NLY-PD"
-        },
-        {
             "name": "MAA",
             "link": "https://finance.yahoo.com/quote/MAA?p=MAA"
         },
         {
-            "name": "NLY-PF",
-            "link": "https://finance.yahoo.com/quote/NLY-PF?p=NLY-PF"
+            "name": "NLY-PD",
+            "link": "https://finance.yahoo.com/quote/NLY-PD?p=NLY-PD"
         },
         {
             "name": "NLY-PG",
             "link": "https://finance.yahoo.com/quote/NLY-PG?p=NLY-PG"
+        },
+        {
+            "name": "NLY-PF",
+            "link": "https://finance.yahoo.com/quote/NLY-PF?p=NLY-PF"
         },
         {
             "name": "UDR",
@@ -237,12 +237,12 @@
             "link": "https://finance.yahoo.com/quote/AMH-PF?p=AMH-PF"
         },
         {
-            "name": "AMH-PD",
-            "link": "https://finance.yahoo.com/quote/AMH-PD?p=AMH-PD"
-        },
-        {
             "name": "AMH-PE",
             "link": "https://finance.yahoo.com/quote/AMH-PE?p=AMH-PE"
+        },
+        {
+            "name": "AMH-PD",
+            "link": "https://finance.yahoo.com/quote/AMH-PD?p=AMH-PD"
         },
         {
             "name": "NNN-PF",
@@ -277,12 +277,12 @@
             "link": "https://finance.yahoo.com/quote/MGP?p=MGP"
         },
         {
-            "name": "NNN",
-            "link": "https://finance.yahoo.com/quote/NNN?p=NNN"
-        },
-        {
             "name": "IRM",
             "link": "https://finance.yahoo.com/quote/IRM?p=IRM"
+        },
+        {
+            "name": "NNN",
+            "link": "https://finance.yahoo.com/quote/NNN?p=NNN"
         },
         {
             "name": "KIM-PM",
@@ -305,6 +305,10 @@
             "link": "https://finance.yahoo.com/quote/GLPI?p=GLPI"
         },
         {
+            "name": "KIM",
+            "link": "https://finance.yahoo.com/quote/KIM?p=KIM"
+        },
+        {
             "name": "KRC",
             "link": "https://finance.yahoo.com/quote/KRC?p=KRC"
         },
@@ -315,14 +319,6 @@
         {
             "name": "KIM-PI",
             "link": "https://finance.yahoo.com/quote/KIM-PI?p=KIM-PI"
-        },
-        {
-            "name": "KIM",
-            "link": "https://finance.yahoo.com/quote/KIM?p=KIM"
-        },
-        {
-            "name": "OHI",
-            "link": "https://finance.yahoo.com/quote/OHI?p=OHI"
         },
         {
             "name": "LAMR",
@@ -337,24 +333,28 @@
             "link": "https://finance.yahoo.com/quote/LPT?p=LPT"
         },
         {
-            "name": "STOR",
-            "link": "https://finance.yahoo.com/quote/STOR?p=STOR"
+            "name": "OHI",
+            "link": "https://finance.yahoo.com/quote/OHI?p=OHI"
         },
         {
-            "name": "AMH",
-            "link": "https://finance.yahoo.com/quote/AMH?p=AMH"
+            "name": "STOR",
+            "link": "https://finance.yahoo.com/quote/STOR?p=STOR"
         },
         {
             "name": "SLG-PI",
             "link": "https://finance.yahoo.com/quote/SLG-PI?p=SLG-PI"
         },
         {
-            "name": "AIV",
-            "link": "https://finance.yahoo.com/quote/AIV?p=AIV"
-        },
-        {
             "name": "JLL",
             "link": "https://finance.yahoo.com/quote/JLL?p=JLL"
+        },
+        {
+            "name": "AMH",
+            "link": "https://finance.yahoo.com/quote/AMH?p=AMH"
+        },
+        {
+            "name": "AIV",
+            "link": "https://finance.yahoo.com/quote/AIV?p=AIV"
         },
         {
             "name": "DEI",
@@ -365,16 +365,16 @@
             "link": "https://finance.yahoo.com/quote/SLG?p=SLG"
         },
         {
+            "name": "NRZ",
+            "link": "https://finance.yahoo.com/quote/NRZ?p=NRZ"
+        },
+        {
             "name": "STWD",
             "link": "https://finance.yahoo.com/quote/STWD?p=STWD"
         },
         {
             "name": "COLD",
             "link": "https://finance.yahoo.com/quote/COLD?p=COLD"
-        },
-        {
-            "name": "NRZ",
-            "link": "https://finance.yahoo.com/quote/NRZ?p=NRZ"
         },
         {
             "name": "ACC",
