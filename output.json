@@ -49,16 +49,16 @@
             "link": "https://finance.yahoo.com/quote/SBAC?p=SBAC"
         },
         {
+            "name": "DLR-PJ",
+            "link": "https://finance.yahoo.com/quote/DLR-PJ?p=DLR-PJ"
+        },
+        {
             "name": "DLR-PK",
             "link": "https://finance.yahoo.com/quote/DLR-PK?p=DLR-PK"
         },
         {
             "name": "DLR-PG",
             "link": "https://finance.yahoo.com/quote/DLR-PG?p=DLR-PG"
-        },
-        {
-            "name": "DLR-PJ",
-            "link": "https://finance.yahoo.com/quote/DLR-PJ?p=DLR-PJ"
         },
         {
             "name": "DLR-PC",
@@ -129,10 +129,6 @@
             "link": "https://finance.yahoo.com/quote/WPC?p=WPC"
         },
         {
-            "name": "MAA-PI",
-            "link": "https://finance.yahoo.com/quote/MAA-PI?p=MAA-PI"
-        },
-        {
             "name": "INVH",
             "link": "https://finance.yahoo.com/quote/INVH?p=INVH"
         },
@@ -149,6 +145,10 @@
             "link": "https://finance.yahoo.com/quote/VNO-PL?p=VNO-PL"
         },
         {
+            "name": "MAA-PI",
+            "link": "https://finance.yahoo.com/quote/MAA-PI?p=MAA-PI"
+        },
+        {
             "name": "NLY",
             "link": "https://finance.yahoo.com/quote/NLY?p=NLY"
         },
@@ -161,20 +161,20 @@
             "link": "https://finance.yahoo.com/quote/NLY-PD?p=NLY-PD"
         },
         {
-            "name": "NLY-PG",
-            "link": "https://finance.yahoo.com/quote/NLY-PG?p=NLY-PG"
-        },
-        {
             "name": "NLY-PF",
             "link": "https://finance.yahoo.com/quote/NLY-PF?p=NLY-PF"
         },
         {
-            "name": "UDR",
-            "link": "https://finance.yahoo.com/quote/UDR?p=UDR"
+            "name": "NLY-PG",
+            "link": "https://finance.yahoo.com/quote/NLY-PG?p=NLY-PG"
         },
         {
             "name": "HST",
             "link": "https://finance.yahoo.com/quote/HST?p=HST"
+        },
+        {
+            "name": "UDR",
+            "link": "https://finance.yahoo.com/quote/UDR?p=UDR"
         },
         {
             "name": "VNO",
@@ -197,12 +197,12 @@
             "link": "https://finance.yahoo.com/quote/REG?p=REG"
         },
         {
-            "name": "CPT",
-            "link": "https://finance.yahoo.com/quote/CPT?p=CPT"
-        },
-        {
             "name": "FRT-PC",
             "link": "https://finance.yahoo.com/quote/FRT-PC?p=FRT-PC"
+        },
+        {
+            "name": "CPT",
+            "link": "https://finance.yahoo.com/quote/CPT?p=CPT"
         },
         {
             "name": "ZG",
@@ -233,6 +233,10 @@
             "link": "https://finance.yahoo.com/quote/AMH-PH?p=AMH-PH"
         },
         {
+            "name": "AMH-PG",
+            "link": "https://finance.yahoo.com/quote/AMH-PG?p=AMH-PG"
+        },
+        {
             "name": "AMH-PF",
             "link": "https://finance.yahoo.com/quote/AMH-PF?p=AMH-PF"
         },
@@ -249,10 +253,6 @@
             "link": "https://finance.yahoo.com/quote/NNN-PF?p=NNN-PF"
         },
         {
-            "name": "AMH-PG",
-            "link": "https://finance.yahoo.com/quote/AMH-PG?p=AMH-PG"
-        },
-        {
             "name": "AGNCM",
             "link": "https://finance.yahoo.com/quote/AGNCM?p=AGNCM"
         },
@@ -265,16 +265,16 @@
             "link": "https://finance.yahoo.com/quote/VER?p=VER"
         },
         {
+            "name": "MGP",
+            "link": "https://finance.yahoo.com/quote/MGP?p=MGP"
+        },
+        {
             "name": "AGNCB",
             "link": "https://finance.yahoo.com/quote/AGNCB?p=AGNCB"
         },
         {
             "name": "AGNCN",
             "link": "https://finance.yahoo.com/quote/AGNCN?p=AGNCN"
-        },
-        {
-            "name": "MGP",
-            "link": "https://finance.yahoo.com/quote/MGP?p=MGP"
         },
         {
             "name": "IRM",
@@ -293,6 +293,14 @@
             "link": "https://finance.yahoo.com/quote/KIM-PJ?p=KIM-PJ"
         },
         {
+            "name": "GLPI",
+            "link": "https://finance.yahoo.com/quote/GLPI?p=GLPI"
+        },
+        {
+            "name": "KIM",
+            "link": "https://finance.yahoo.com/quote/KIM?p=KIM"
+        },
+        {
             "name": "KIM-PL",
             "link": "https://finance.yahoo.com/quote/KIM-PL?p=KIM-PL"
         },
@@ -301,12 +309,8 @@
             "link": "https://finance.yahoo.com/quote/KIM-PK?p=KIM-PK"
         },
         {
-            "name": "GLPI",
-            "link": "https://finance.yahoo.com/quote/GLPI?p=GLPI"
-        },
-        {
-            "name": "KIM",
-            "link": "https://finance.yahoo.com/quote/KIM?p=KIM"
+            "name": "LAMR",
+            "link": "https://finance.yahoo.com/quote/LAMR?p=LAMR"
         },
         {
             "name": "KRC",
@@ -319,10 +323,6 @@
         {
             "name": "KIM-PI",
             "link": "https://finance.yahoo.com/quote/KIM-PI?p=KIM-PI"
-        },
-        {
-            "name": "LAMR",
-            "link": "https://finance.yahoo.com/quote/LAMR?p=LAMR"
         },
         {
             "name": "MPW",
@@ -341,12 +341,12 @@
             "link": "https://finance.yahoo.com/quote/STOR?p=STOR"
         },
         {
-            "name": "SLG-PI",
-            "link": "https://finance.yahoo.com/quote/SLG-PI?p=SLG-PI"
-        },
-        {
             "name": "JLL",
             "link": "https://finance.yahoo.com/quote/JLL?p=JLL"
+        },
+        {
+            "name": "SLG-PI",
+            "link": "https://finance.yahoo.com/quote/SLG-PI?p=SLG-PI"
         },
         {
             "name": "AMH",
@@ -389,16 +389,16 @@
             "link": "https://finance.yahoo.com/quote/CONE?p=CONE"
         },
         {
+            "name": "PSB-PX",
+            "link": "https://finance.yahoo.com/quote/PSB-PX?p=PSB-PX"
+        },
+        {
             "name": "PSB-PY",
             "link": "https://finance.yahoo.com/quote/PSB-PY?p=PSB-PY"
         },
         {
             "name": "PSB-PV",
             "link": "https://finance.yahoo.com/quote/PSB-PV?p=PSB-PV"
-        },
-        {
-            "name": "PSB-PX",
-            "link": "https://finance.yahoo.com/quote/PSB-PX?p=PSB-PX"
         }
     ]
 }

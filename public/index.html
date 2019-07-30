@@ -12,31 +12,43 @@
     $(function(){
         $.getJSON('/output.json',function(data){
             $.each(data.info,function(i,el){
-                $('ul').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
+                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
             });
         }).error(function(){
             console.log('error');
         });
-        $.getJSON('/info.json',function(data){
+        $.getJSON('/output2.json',function(data){
             $.each(data.info,function(i,el){
-                $('ol').append('<li>'+el.description+'</li>');
+                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
             });
         }).error(function(){
             console.log('error');
         });
-    });
-    $(function(){
-        $.getJSON('/info.json',function(data){
+        $.getJSON('/output3.json',function(data){
             $.each(data.info,function(i,el){
-                $('ol').append('<li>'+el.description+'</li>');
+                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
             });
         }).error(function(){
             console.log('error');
         });
+        $.getJSON('/output4.json',function(data){
+            $.each(data.info,function(i,el){
+                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
+            });
+        }).error(function(){
+            console.log('error');
+        });
+        // $.getJSON('/info.json',function(data){
+        //     $.each(data.info,function(i,el){
+        //         console.log(i)
+        //         $('ol').append('<li>'+ el +'<p>'+ el.description + '</p>'+'</li>');
+        //     });
+        // }).error(function(){
+        //     console.log('error');
+        // });
     });
 </script>
 <body>
-    <ul></ul>
-    <ol></ol>
+    <ol class="one"></ol>
 </body>
 </html>

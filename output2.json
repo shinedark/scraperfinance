@@ -1,0 +1,404 @@
+{
+    "info": [
+        {
+            "name": "PSB-PW",
+            "link": "https://finance.yahoo.com/quote/PSB-PW?p=PSB-PW"
+        },
+        {
+            "name": "PSB-PU",
+            "link": "https://finance.yahoo.com/quote/PSB-PU?p=PSB-PU"
+        },
+        {
+            "name": "EPR-PG",
+            "link": "https://finance.yahoo.com/quote/EPR-PG?p=EPR-PG"
+        },
+        {
+            "name": "SHO-PE",
+            "link": "https://finance.yahoo.com/quote/SHO-PE?p=SHO-PE"
+        },
+        {
+            "name": "HHC",
+            "link": "https://finance.yahoo.com/quote/HHC?p=HHC"
+        },
+        {
+            "name": "TPL",
+            "link": "https://finance.yahoo.com/quote/TPL?p=TPL"
+        },
+        {
+            "name": "EPR",
+            "link": "https://finance.yahoo.com/quote/EPR?p=EPR"
+        },
+        {
+            "name": "BRX",
+            "link": "https://finance.yahoo.com/quote/BRX?p=BRX"
+        },
+        {
+            "name": "HTA",
+            "link": "https://finance.yahoo.com/quote/HTA?p=HTA"
+        },
+        {
+            "name": "HPP",
+            "link": "https://finance.yahoo.com/quote/HPP?p=HPP"
+        },
+        {
+            "name": "PK",
+            "link": "https://finance.yahoo.com/quote/PK?p=PK"
+        },
+        {
+            "name": "JBGS",
+            "link": "https://finance.yahoo.com/quote/JBGS?p=JBGS"
+        },
+        {
+            "name": "CUZ",
+            "link": "https://finance.yahoo.com/quote/CUZ?p=CUZ"
+        },
+        {
+            "name": "PSB",
+            "link": "https://finance.yahoo.com/quote/PSB?p=PSB"
+        },
+        {
+            "name": "FR",
+            "link": "https://finance.yahoo.com/quote/FR?p=FR"
+        },
+        {
+            "name": "BXMT",
+            "link": "https://finance.yahoo.com/quote/BXMT?p=BXMT"
+        },
+        {
+            "name": "MAC",
+            "link": "https://finance.yahoo.com/quote/MAC?p=MAC"
+        },
+        {
+            "name": "HIW",
+            "link": "https://finance.yahoo.com/quote/HIW?p=HIW"
+        },
+        {
+            "name": "EGP",
+            "link": "https://finance.yahoo.com/quote/EGP?p=EGP"
+        },
+        {
+            "name": "LSI",
+            "link": "https://finance.yahoo.com/quote/LSI?p=LSI"
+        },
+        {
+            "name": "SRC",
+            "link": "https://finance.yahoo.com/quote/SRC?p=SRC"
+        },
+        {
+            "name": "CWK",
+            "link": "https://finance.yahoo.com/quote/CWK?p=CWK"
+        },
+        {
+            "name": "REXR",
+            "link": "https://finance.yahoo.com/quote/REXR?p=REXR"
+        },
+        {
+            "name": "REXR-PB",
+            "link": "https://finance.yahoo.com/quote/REXR-PB?p=REXR-PB"
+        },
+        {
+            "name": "REXR-PA",
+            "link": "https://finance.yahoo.com/quote/REXR-PA?p=REXR-PA"
+        },
+        {
+            "name": "ESRT",
+            "link": "https://finance.yahoo.com/quote/ESRT?p=ESRT"
+        },
+        {
+            "name": "HR",
+            "link": "https://finance.yahoo.com/quote/HR?p=HR"
+        },
+        {
+            "name": "EQC",
+            "link": "https://finance.yahoo.com/quote/EQC?p=EQC"
+        },
+        {
+            "name": "HPT",
+            "link": "https://finance.yahoo.com/quote/HPT?p=HPT"
+        },
+        {
+            "name": "SRC-PA",
+            "link": "https://finance.yahoo.com/quote/SRC-PA?p=SRC-PA"
+        },
+        {
+            "name": "EQC-PD",
+            "link": "https://finance.yahoo.com/quote/EQC-PD?p=EQC-PD"
+        },
+        {
+            "name": "RHP",
+            "link": "https://finance.yahoo.com/quote/RHP?p=RHP"
+        },
+        {
+            "name": "STAG-PC",
+            "link": "https://finance.yahoo.com/quote/STAG-PC?p=STAG-PC"
+        },
+        {
+            "name": "COR",
+            "link": "https://finance.yahoo.com/quote/COR?p=COR"
+        },
+        {
+            "name": "OUT",
+            "link": "https://finance.yahoo.com/quote/OUT?p=OUT"
+        },
+        {
+            "name": "FSV",
+            "link": "https://finance.yahoo.com/quote/FSV?p=FSV"
+        },
+        {
+            "name": "STAG",
+            "link": "https://finance.yahoo.com/quote/STAG?p=STAG"
+        },
+        {
+            "name": "TCO-PK",
+            "link": "https://finance.yahoo.com/quote/TCO-PK?p=TCO-PK"
+        },
+        {
+            "name": "PEB-PC",
+            "link": "https://finance.yahoo.com/quote/PEB-PC?p=PEB-PC"
+        },
+        {
+            "name": "TCO-PJ",
+            "link": "https://finance.yahoo.com/quote/TCO-PJ?p=TCO-PJ"
+        },
+        {
+            "name": "PEB-PD",
+            "link": "https://finance.yahoo.com/quote/PEB-PD?p=PEB-PD"
+        },
+        {
+            "name": "SBRA",
+            "link": "https://finance.yahoo.com/quote/SBRA?p=SBRA"
+        },
+        {
+            "name": "PEB",
+            "link": "https://finance.yahoo.com/quote/PEB?p=PEB"
+        },
+        {
+            "name": "TWO",
+            "link": "https://finance.yahoo.com/quote/TWO?p=TWO"
+        },
+        {
+            "name": "CIM-PB",
+            "link": "https://finance.yahoo.com/quote/CIM-PB?p=CIM-PB"
+        },
+        {
+            "name": "CIM-PC",
+            "link": "https://finance.yahoo.com/quote/CIM-PC?p=CIM-PC"
+        },
+        {
+            "name": "CIM-PA",
+            "link": "https://finance.yahoo.com/quote/CIM-PA?p=CIM-PA"
+        },
+        {
+            "name": "TWO-PC",
+            "link": "https://finance.yahoo.com/quote/TWO-PC?p=TWO-PC"
+        },
+        {
+            "name": "CIM-PD",
+            "link": "https://finance.yahoo.com/quote/CIM-PD?p=CIM-PD"
+        },
+        {
+            "name": "CIM",
+            "link": "https://finance.yahoo.com/quote/CIM?p=CIM"
+        },
+        {
+            "name": "WRI",
+            "link": "https://finance.yahoo.com/quote/WRI?p=WRI"
+        },
+        {
+            "name": "APLE",
+            "link": "https://finance.yahoo.com/quote/APLE?p=APLE"
+        },
+        {
+            "name": "TWO-PA",
+            "link": "https://finance.yahoo.com/quote/TWO-PA?p=TWO-PA"
+        },
+        {
+            "name": "TWO-PB",
+            "link": "https://finance.yahoo.com/quote/TWO-PB?p=TWO-PB"
+        },
+        {
+            "name": "NHI",
+            "link": "https://finance.yahoo.com/quote/NHI?p=NHI"
+        },
+        {
+            "name": "MFA-PB",
+            "link": "https://finance.yahoo.com/quote/MFA-PB?p=MFA-PB"
+        },
+        {
+            "name": "MFA",
+            "link": "https://finance.yahoo.com/quote/MFA?p=MFA"
+        },
+        {
+            "name": "PGRE",
+            "link": "https://finance.yahoo.com/quote/PGRE?p=PGRE"
+        },
+        {
+            "name": "DOC",
+            "link": "https://finance.yahoo.com/quote/DOC?p=DOC"
+        },
+        {
+            "name": "OFC",
+            "link": "https://finance.yahoo.com/quote/OFC?p=OFC"
+        },
+        {
+            "name": "TRNO",
+            "link": "https://finance.yahoo.com/quote/TRNO?p=TRNO"
+        },
+        {
+            "name": "SHO",
+            "link": "https://finance.yahoo.com/quote/SHO?p=SHO"
+        },
+        {
+            "name": "RLJ",
+            "link": "https://finance.yahoo.com/quote/RLJ?p=RLJ"
+        },
+        {
+            "name": "RLJ-PA",
+            "link": "https://finance.yahoo.com/quote/RLJ-PA?p=RLJ-PA"
+        },
+        {
+            "name": "KW",
+            "link": "https://finance.yahoo.com/quote/KW?p=KW"
+        },
+        {
+            "name": "QTS-PA",
+            "link": "https://finance.yahoo.com/quote/QTS-PA?p=QTS-PA"
+        },
+        {
+            "name": "ARI",
+            "link": "https://finance.yahoo.com/quote/ARI?p=ARI"
+        },
+        {
+            "name": "QTS-PB",
+            "link": "https://finance.yahoo.com/quote/QTS-PB?p=QTS-PB"
+        },
+        {
+            "name": "CIGI",
+            "link": "https://finance.yahoo.com/quote/CIGI?p=CIGI"
+        },
+        {
+            "name": "ADC",
+            "link": "https://finance.yahoo.com/quote/ADC?p=ADC"
+        },
+        {
+            "name": "AAT",
+            "link": "https://finance.yahoo.com/quote/AAT?p=AAT"
+        },
+        {
+            "name": "CLNY",
+            "link": "https://finance.yahoo.com/quote/CLNY?p=CLNY"
+        },
+        {
+            "name": "CLNY-PB",
+            "link": "https://finance.yahoo.com/quote/CLNY-PB?p=CLNY-PB"
+        },
+        {
+            "name": "CLNY-PH",
+            "link": "https://finance.yahoo.com/quote/CLNY-PH?p=CLNY-PH"
+        },
+        {
+            "name": "CLNY-PG",
+            "link": "https://finance.yahoo.com/quote/CLNY-PG?p=CLNY-PG"
+        },
+        {
+            "name": "CLNY-PJ",
+            "link": "https://finance.yahoo.com/quote/CLNY-PJ?p=CLNY-PJ"
+        },
+        {
+            "name": "CLNY-PE",
+            "link": "https://finance.yahoo.com/quote/CLNY-PE?p=CLNY-PE"
+        },
+        {
+            "name": "CLNY-PI",
+            "link": "https://finance.yahoo.com/quote/CLNY-PI?p=CLNY-PI"
+        },
+        {
+            "name": "PCH",
+            "link": "https://finance.yahoo.com/quote/PCH?p=PCH"
+        },
+        {
+            "name": "NSA-PA",
+            "link": "https://finance.yahoo.com/quote/NSA-PA?p=NSA-PA"
+        },
+        {
+            "name": "BDN",
+            "link": "https://finance.yahoo.com/quote/BDN?p=BDN"
+        },
+        {
+            "name": "PDM",
+            "link": "https://finance.yahoo.com/quote/PDM?p=PDM"
+        },
+        {
+            "name": "CXP",
+            "link": "https://finance.yahoo.com/quote/CXP?p=CXP"
+        },
+        {
+            "name": "SITC",
+            "link": "https://finance.yahoo.com/quote/SITC?p=SITC"
+        },
+        {
+            "name": "RPAI",
+            "link": "https://finance.yahoo.com/quote/RPAI?p=RPAI"
+        },
+        {
+            "name": "QTS",
+            "link": "https://finance.yahoo.com/quote/QTS?p=QTS"
+        },
+        {
+            "name": "TCO",
+            "link": "https://finance.yahoo.com/quote/TCO?p=TCO"
+        },
+        {
+            "name": "SITC-PA",
+            "link": "https://finance.yahoo.com/quote/SITC-PA?p=SITC-PA"
+        },
+        {
+            "name": "SITC-PK",
+            "link": "https://finance.yahoo.com/quote/SITC-PK?p=SITC-PK"
+        },
+        {
+            "name": "SITC-PJ",
+            "link": "https://finance.yahoo.com/quote/SITC-PJ?p=SITC-PJ"
+        },
+        {
+            "name": "XHR",
+            "link": "https://finance.yahoo.com/quote/XHR?p=XHR"
+        },
+        {
+            "name": "SRG-PA",
+            "link": "https://finance.yahoo.com/quote/SRG-PA?p=SRG-PA"
+        },
+        {
+            "name": "AKR",
+            "link": "https://finance.yahoo.com/quote/AKR?p=AKR"
+        },
+        {
+            "name": "SRG",
+            "link": "https://finance.yahoo.com/quote/SRG?p=SRG"
+        },
+        {
+            "name": "LXP",
+            "link": "https://finance.yahoo.com/quote/LXP?p=LXP"
+        },
+        {
+            "name": "GRP-UN",
+            "link": "https://finance.yahoo.com/quote/GRP-UN?p=GRP-UN"
+        },
+        {
+            "name": "LXP-PC",
+            "link": "https://finance.yahoo.com/quote/LXP-PC?p=LXP-PC"
+        },
+        {
+            "name": "CTRE",
+            "link": "https://finance.yahoo.com/quote/CTRE?p=CTRE"
+        },
+        {
+            "name": "WRE",
+            "link": "https://finance.yahoo.com/quote/WRE?p=WRE"
+        },
+        {
+            "name": "IVR-PB",
+            "link": "https://finance.yahoo.com/quote/IVR-PB?p=IVR-PB"
+        }
+    ]
+}
