@@ -1,5 +1,6 @@
 var express = require("express");
 var fs = require("fs");
+var async = require("async");
 var request = require("request");
 var cheerio = require("cheerio");
 var list = require("./output.json");
@@ -147,57 +148,56 @@ app.get("/scrape4", function(req, res) {
 });
 
 app.get("/scompany", function(req, res) {
-var companyName = [];
-list.info.forEach(element => {
-  companyName.push(element.name);
-});
-// list2.info.forEach(element => {
-//   companyName.push(element.name);
-// });
-// list3.info.forEach(element => {
-//   companyName.push(element.name);
-// });
-// list4.info.forEach(element => {
-//   companyName.push(element.name);
-// });
-var urls = [];
-for (var i = 0; i < companyName.length; i++) {
-  urls.push(
-    `https://finance.yahoo.com/quote/${companyName[i]}/profile?p=${
-      companyName[i]
-    }`
-  );
-}
-  urls.forEach(url => {
-    request(url, function(err, resp, section) {
-      $ = cheerio.load(section);
-      var jason = { info: [] };
-      var nm = $('.asset-profile-container').find("h3"); 
-      var inf = $('.asset-profile-container').find("div").find("p").find("a");
-      var par = $(".quote-sub-section").find("p");
-
-      $(nm).each(function(i, d) {
-        jason.info.push({ names: $(d).text() });
+  var companyName = [];
+  list.info.forEach(element => {
+    companyName.push(element.name);
+  });
+  // list2.info.forEach(element => {
+  //   companyName.push(element.name);
+  // });
+  // list3.info.forEach(element => {
+  //   companyName.push(element.name);
+  // });
+  // list4.info.forEach(element => {
+  //   companyName.push(element.name);
+  // });
+  var urls = [];
+  for (var i = 0; i < companyName.length; i++) {
+    urls.push(
+      `https://finance.yahoo.com/quote/${companyName[i]}/profile?p=${
+        companyName[i]
+      }`
+    );
+  }
+    urls.forEach(url => {
+      request(url, function(err, resp, section) {
+        $ = cheerio.load(section);
+        var jason = { info: [] };
+        var nm = $('.asset-profile-container').find("h3"); 
+        var inf = $('.asset-profile-container').find("div").find("p").find("a");
+        var par = $(".quote-sub-section").find("p");
+  
+        $(nm).each(function(i, d) {
+          jason.info.push({ names: $(d).text() });
+        });
+  
+        $(inf).each(function(i, d) {
+          jason.info.push({ info: $(d).text() });
+        }); 
+  
+        $(par).each(function( i, d) {
+          jason.info.push({ description: $(d).text() });
+        });
+        // fs.writeFile("output5.json", JSON.stringify(jason, null, 5),  function(err) {
+        //   console.log(
+        //     "File successfully written! - Check your project directory for the output5.json file"
+        //   );
+        // });
+  
+        res.send(jason);
       });
-
-      $(inf).each(function(i, d) {
-        jason.info.push({ info: $(d).text() });
-      }); 
-
-      $(par).each(function( i, d) {
-        jason.info.push({ description: $(d).text() });
-      });
-      fs.writeFile("output5.json", JSON.stringify(jason, null, 5),  function(err) {
-        console.log(
-          "File successfully written! - Check your project directory for the output5.json file"
-        );
-      });
-
-      res.send("Check your console!");
     });
   });
-});
-
 
 app.listen("8081");
 console.log("Magic happens on port 8081");
