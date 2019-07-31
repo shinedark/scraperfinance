@@ -9,7 +9,7 @@ var list3 = require("./output3.json");
 var list4 = require("./output4.json");
 var app = express();
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 app.get("/output.json", function(req, res, next) {
   res.sendFile(__dirname + "/output.json");
@@ -27,9 +27,13 @@ app.get("/output4.json", function(req, res, next) {
   res.sendFile(__dirname + "/output4.json");
 });
 
-app.get("/info.json", function(req, res, next) {
-  res.sendFile(__dirname + "/info.json");
+app.get("/output5.json", function(req, res, next) {
+  res.sendFile(__dirname + "/output5.json");
 });
+
+app.get("/", function(req,res){
+  res.sendFile(__dirname + '/output5.json');
+})
 
 app.get("/scrape", function(req, res) {
   url =
@@ -169,36 +173,66 @@ app.get("/scompany", function(req, res) {
       }`
     );
   }
-    urls.forEach(url => {
-      request(url, function(err, resp, section) {
+  var jason = {results: []};
+  async.eachSeries(urls, function(file, callback) {
+    
+    // Perform operation on file here.
+    console.log('Processing file ' + file);
+    
+    if( file.length > 60 ) {
+      console.log('This file name is too long');
+      callback('File name too long');
+    } else {
+      // Do work to process file here
+      
+      request(file, function(err, resp, section) {
+        var info = [];
         $ = cheerio.load(section);
-        var jason = { info: [] };
         var nm = $('.asset-profile-container').find("h3"); 
         var inf = $('.asset-profile-container').find("div").find("p").find("a");
         var par = $(".quote-sub-section").find("p");
   
         $(nm).each(function(i, d) {
-          jason.info.push({ names: $(d).text() });
+          info.push({ names: $(d).text() });
         });
   
         $(inf).each(function(i, d) {
-          jason.info.push({ info: $(d).text() });
+          info.push({ contact: $(d).text() });
         }); 
   
         $(par).each(function( i, d) {
-          jason.info.push({ description: $(d).text() });
-        });
-        // fs.writeFile("output5.json", JSON.stringify(jason, null, 5),  function(err) {
-        //   console.log(
-        //     "File successfully written! - Check your project directory for the output5.json file"
-        //   );
-        // });
-  
-        res.send(jason);
+          info.push({ description: $(d).text() });
+        }); 
+       
+        jason.results.push(info)
       });
-    });
-  });
-
+      console.log('File processed'); 
+      
+      setTimeout(function(){ 
+        fs.writeFile("output5.json", JSON.stringify(jason, null, 4), function(err) {
+          console.log(
+            "File successfully written! - Check your project directory for the output4.json file"
+          );
+        });
+        res.send("Check your console!");
+      }, 3300);
+      callback();
+    }
+}, function(err) {
+    // if any of the file processing produced an error, err would equal that error
+    if( err ) {
+      // One of the iterations produced an error.
+      // All processing will now stop.
+      console.log('A file failed to process');
+    } else {
+      console.log('All files have been processed successfully');
+      
+      
+    }
+    
+});
+  
+})
 app.listen("8081");
 console.log("Magic happens on port 8081");
 exports = module.exports = app;
