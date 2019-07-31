@@ -32,13 +32,13 @@ app.get("/output5.json", function(req, res, next) {
 });
 
 app.get("/", function(req,res){
-  res.sendFile(__dirname + '/output5.json');
+  res.sendFile(__dirname + '/residential.json');
 })
 
 app.get("/scrape", function(req, res) {
   url =
     "https://finance.yahoo.com/screener/predefined/ms_real_estate?count=100&offset=0";
-
+      
   request(url, function(err, resp, table) {
     $ = cheerio.load(table);
     var json = { info: [] };
@@ -156,30 +156,30 @@ app.get("/scompany", function(req, res) {
   list.info.forEach(element => {
     companyName.push(element.name);
   });
-  // list2.info.forEach(element => {
-  //   companyName.push(element.name);
-  // });
-  // list3.info.forEach(element => {
-  //   companyName.push(element.name);
-  // });
-  // list4.info.forEach(element => {
-  //   companyName.push(element.name);
-  // });
+  list2.info.forEach(element => {
+    companyName.push(element.name);
+  });
+  list3.info.forEach(element => {
+    companyName.push(element.name);
+  });
+  list4.info.forEach(element => {
+    companyName.push(element.name);
+  });
   var urls = [];
-  for (var i = 0; i < companyName.length; i++) {
+  
+  companyName.forEach(element => {
     urls.push(
-      `https://finance.yahoo.com/quote/${companyName[i]}/profile?p=${
-        companyName[i]
-      }`
-    );
-  }
+      `https://finance.yahoo.com/quote/${element}/profile?p=${element}`
+    )
+  })
   var jason = {results: []};
   async.eachSeries(urls, function(file, callback) {
+    // console.log(urls.length)
     
     // Perform operation on file here.
     console.log('Processing file ' + file);
     
-    if( file.length > 60 ) {
+    if( file.length > 90 ) {
       console.log('This file name is too long');
       callback('File name too long');
     } else {
@@ -188,34 +188,37 @@ app.get("/scompany", function(req, res) {
       request(file, function(err, resp, section) {
         var info = [];
         $ = cheerio.load(section);
-        var nm = $('.asset-profile-container').find("h3"); 
+        
         var inf = $('.asset-profile-container').find("div").find("p").find("a");
         var par = $(".quote-sub-section").find("p");
-  
-        $(nm).each(function(i, d) {
-          info.push({ names: $(d).text() });
-        });
-  
-        $(inf).each(function(i, d) {
-          info.push({ contact: $(d).text() });
-        }); 
-  
-        $(par).each(function( i, d) {
-          info.push({ description: $(d).text() });
-        }); 
-       
-        jason.results.push(info)
+        var sector = $('.asset-profile-container').find("div").find("p").find("span"); 
+        // var nm = $('section').find('.asset-profile-container').find("div").find("h3"); 
+        $(sector).each(function(i,d){
+          
+          if($(d).text() === 'REIT - Residential'){
+            $(inf).each(function(i, m) {
+              // console.log($(m).text() );
+              // jason.results.push(info)
+            }); 
+      
+            // $(par).each(function( i, d) {
+            //   info.push({ description: $(d).text() });
+            // }); 
+            
+          }
+        })
       });
       console.log('File processed'); 
       
-      setTimeout(function(){ 
-        fs.writeFile("output5.json", JSON.stringify(jason, null, 4), function(err) {
-          console.log(
-            "File successfully written! - Check your project directory for the output4.json file"
-          );
-        });
-        res.send("Check your console!");
-      }, 3300);
+      // setTimeout(function(){ 
+        console.log(jason.results)
+      //   // fs.writeFile("output5.json", JSON.stringify(jason, null, 4), function(err) {
+      //   //   console.log(
+      //   //     "File successfully written! - Check your project directory for the output4.json file"
+      //   //   );
+      //   // });
+      //   // res.send("Check your console!");
+      // }, 3300);
       callback();
     }
 }, function(err) {

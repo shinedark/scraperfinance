@@ -9,29 +9,18 @@
 </head>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
-//     $(function(){
-//         $.getJSON('/output5.json',function(data){
-//             var show = data.results;
-//             var html = "<table border='1|1'>";
-//     for (var i = 0; i < show.length; i++) {
-//         console.log(show[i])
-//         // html+="<tr>";
-//         // html+="<td>"+show[i].name+"</td>";
-//         // html+="<td>"+show[i].contact+"</td>";
-//         // html+="<td>"+show[i].description+"</td>";
-        
-//         // html+="</tr>";
-
-//     }
-//     html+="</table>";
-// document.getElementById("box").innerHTML = html;
+    $(function(){
+        $.getJSON('leads.json',function(data){
+            var show = data.results;
+           console.log(show)
+    
            
-//         }).error(function(){
-//             console.log('error');
-//         });
-//     });
+        }).error(function(){
+            console.log('error');
+        });
+    });
 </script>
 <body>
-    <div id="box"></div>
+    <ul></ul>
 </body>
 </html>
