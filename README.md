@@ -5,9 +5,13 @@ $ npm install
 $ nodemon 
 ```
 
-got to http://localhost:8081/ to see the list to scrape go to http://localhost:8081/scrape
+got to http://localhost:8081/ to see the list of companies that invest in residential investments.
 
-You can scrape Yahoo finance table for the 100 companies listed their 1st table page.
-It also includes other links that are in tables in the site but if you check [output](./output.json)
-from index 30 to 129 you get the symbols and links to the yahoo finance page which has information of that company. 
+Process 
+
+Scrape [Yahoo](https://finance.yahoo.com/screener/predefined/ms_real_estate?count=100&offset=100) the problem is that if you then apply filters to the search like the residential one. It won't affect the url so you  to scrape everything in the real state market then you have to check for the industry REIT - Residential. And finally get the links and phone numbers. Also note some companies have multiple stocks so and the information for site and phone is the same. So I had to manually check for that. 
+
+
+
+ 
 
