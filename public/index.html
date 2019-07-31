@@ -10,39 +10,17 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        $.getJSON('/output.json',function(data){
-            $.each(data.info,function(i,el){
-                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
-            });
-        }).error(function(){
-            console.log('error');
-        });
-        $.getJSON('/output2.json',function(data){
-            $.each(data.info,function(i,el){
-                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
-            });
-        }).error(function(){
-            console.log('error');
-        });
-        $.getJSON('/output3.json',function(data){
-            $.each(data.info,function(i,el){
-                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
-            });
-        }).error(function(){
-            console.log('error');
-        });
-        $.getJSON('/output4.json',function(data){
-            $.each(data.info,function(i,el){
-                $('.one').append('<li>'+el.name+ '<a href='+ el.link + '>'+el.link+ '</a>'+ '</li>');
-            });
-        }).error(function(){
-            console.log('error');
-        });
         // $.getJSON('/info.json',function(data){
-        //     $.each(data.info,function(i,el){
-        //         console.log(i)
-        //         $('ol').append('<li>'+ el +'<p>'+ el.description + '</p>'+'</li>');
-        //     });
+            
+        //     // data.info.forEach(element => {
+        //     //     $('ol').append('<li>'+ element.name +'</li>'); 
+        //     //     $('ol').append( '<li>'+ element.site +'</li>');
+        //     //     $('ol').append( '<li>'+ element.description +'</li>');
+        //     // });
+        //     // $.each(,function(i,el){
+        //     //     console.log(el)
+        //     //     
+        //     // });
         // }).error(function(){
         //     console.log('error');
         // });
